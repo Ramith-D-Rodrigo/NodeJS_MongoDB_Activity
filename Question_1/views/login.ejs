@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <title>User Log-In</title>
+    </head>
+    <body>
+        <div id="background">
+            <div id="box">
+                <div id="topic">
+                    LOGIN
+                </div>
+                <div>
+                    <% if(messages.error){ %>
+                        <%= messages.error %>
+                    <% } %>
+                </div>
+                <form action="/login" method="POST">   
+                        <div class="usrinputs">Email : <input type="text" class="input" name="email"></div>
+                        <div class="usrinputs">Password : <input type="password" class="input" name="password"></div>
+                        <button type="submit" value="Login" name="submit_btn"  class="btn">LOGIN</button>
+                </form>
+                <form action="/register" method="GET">
+                    <div>
+                        <p style="text-align: center">New User?</p>
+                        <button type="submit" value="Signup" name="submit_btn" class="btn">SIGN UP</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
