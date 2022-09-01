@@ -15,9 +15,9 @@ app.use(express.urlencoded({extended: false}));
 
 mongoose.connect("mongodb://localhost/rad_activity");
 
-app.get('/', function(req, res){
+/* app.get('/', function(req, res){
     res.render('index.ejs');
-})
+}) */
 
 app.post('/upload', upload.single('photo'), function(req, res){
     const img_data = {
