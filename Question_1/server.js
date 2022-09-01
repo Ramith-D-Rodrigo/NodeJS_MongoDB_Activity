@@ -5,7 +5,6 @@ const flash = require('express-flash');
 const session = require('express-session');
 const mongoose = require('mongoose');
 const User = require('./models/user.js');
-const { findOne } = require('./models/user.js');
 
 mongoose.connect("mongodb://localhost/rad_activity");
 
