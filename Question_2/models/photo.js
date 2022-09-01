@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 
-let photoScheme = mongoose.Schema({
-    file : File,
+let imageSchema = new mongoose.Schema({
+    image:{
+        data : Buffer,
+        contentType : String
+    },
     caption : String
-})
+});
+
+module.exports = mongoose.model("Image", imageSchema);

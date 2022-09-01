@@ -93,7 +93,7 @@
     "minipass": "^3.3.4",
     "minizlib": "^2.1.2",
     "mkdirp": "^1.0.4",
-    "mongodb": "^4.9.0",
+    "mongodb": "^4.9.1",
     "mongoose": "^6.5.4",
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",

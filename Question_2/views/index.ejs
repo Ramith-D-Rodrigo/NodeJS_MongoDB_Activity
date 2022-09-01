@@ -10,9 +10,9 @@
     <body>
         <h1>Nodejs File Upload with MongoDB</h1>
         <div class ='container'>
-            <form action="/upload" method="POST">
-                <input type="file" name="File"/><br>
-                <input type="text" placeholder="Caption">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name='photo'/><br><br>
+                <input type="text" placeholder="Caption" name="caption">
                 <button type="submit">UPLOAD</button>
             </form>
         </div>
