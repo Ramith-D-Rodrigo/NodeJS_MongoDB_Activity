@@ -39,4 +39,16 @@ app.post('/upload', upload.single('photo'), function(req, res){
     })
 });
 
+
+app.get("/",  (req, res) => {
+    Image.find({}, (err, images) => {
+      if (err) {
+          console.log(err);
+          res.status(500).send("An error occurred", err);
+      } else {
+          res.render("index", {images: images});
+      }
+    });
+  });
+
 app.listen(3000);
