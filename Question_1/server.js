@@ -6,7 +6,7 @@ const session = require('express-session');
 const mongoose = require('mongoose');
 const User = require('./models/user.js');
 
-mongoose.connect("mongodb://localhost/rad_activity");
+mongoose.connect("mongodb://localhost/rad_activity/");
 
 const localStrategy = require('passport-local').Strategy;
 
